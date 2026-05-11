@@ -37,6 +37,7 @@ public class AddNewDeptController extends HttpServlet {
 			out.println("</form>");
 			
 			String btnValue=request.getParameter("s");
+			
 			out.println("<h1 class ='text-white'>"+btnValue+"</h1>");
 			if(!Optional.ofNullable(btnValue).isEmpty()){
 				String deptname=request.getParameter("name");
